@@ -46,6 +46,10 @@
             margin: 10px;
             width: 80%;
         }
+
+        .search-label {
+            color: white;
+        }
         
         .product {
             background-color: white;
@@ -79,7 +83,7 @@
         }
 
         .add-to-cart {
-            background-color: #4CAF50;
+            background-color: #4CAF50; /* Green color */
             border: none;
             color: white;
             padding: 10px 20px;
@@ -92,6 +96,11 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049; /* Darker green color on hover */
         }
     </style>
 </head>
@@ -101,7 +110,8 @@
             <span class="art-supplies">Art Supplies</span> <!-- Changed the font size and removed "Store" -->
         </div>
         <div>
-            <input type="text" class="search-bar" placeholder="Search...">
+            <label for="search-bar" class="search-label">Search Product:</label>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
         </div>
         <div>
             <button class="button">Home</button>
